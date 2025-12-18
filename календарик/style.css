@@ -1,0 +1,21 @@
+table {
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+caption,
+tr,
+th,
+td {
+	border: solid 2px;
+}
+caption {
+	border-bottom: none;
+	font-weight: bolder;
+}
+.weekend {
+	border-color: black;
+	color: red;
+}
+.tree {
+	font-family: "Courier New", Courier, monospace;
+}

@@ -1,21 +1,33 @@
-table {
-	border-collapse: collapse;
-	border-spacing: 0px;
+body {
+	font-family: sans-serif;
 }
-caption,
-tr,
-th,
-td {
-	border: solid 2px;
+fieldset {
+	display: inline-block;
+	border-radius: 20px;
+	border: 2px solid;
+	padding-right: 200px;
 }
-caption {
-	border-bottom: none;
-	font-weight: bolder;
+button {
+	display: block;
+	cursor: pointer;
+	margin-bottom: 20px;
+	border-radius: 5px;
 }
-.weekend {
-	border-color: black;
-	color: red;
+textarea {
+	display: block;
+	resize: vertical;
+	max-height: 200px;
+	margin-bottom: 30px;
 }
-.tree {
-	font-family: "Courier New", Courier, monospace;
+label {
+	display: block;
+	font-size: larger;
+}
+input {
+	margin-bottom: 30px;
+	display: block;
+	border-radius: 4px;
+}
+.check {
+	display: inline;
 }

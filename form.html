@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="forma.css" />
+		<link rel="stylesheet" href="./form/css/normalize.css" />
+	</head>
+	<body>
+		<form class="Form">
+			<fieldset class="form-group">
+				<legend class="form-group-title">Ваши личные данные</legend>
+				<label class="label">Ваше имя</label>
+				<input
+					type="text"
+					id="Name"
+					placeholder="Имя"
+					name="Name"
+					class="input"
+					required
+				/>
+				<label class="labelfor="Age">Ваш возраст</label>
+				<input
+					type="number"
+					id="Age"
+					placeholder="Возраст"
+					name="Age"
+					class="input"
+					required
+				/>
+				<label class="label for="Phone">Ваш номер телефона</label>
+				<input
+					type="tel"
+					id="Phone"
+					placeholder="Номер"
+					name="Phone"
+					class="input"
+					required
+				/>
+				<label class="label for="password">Пароль</label>
+				<input
+					type="password"
+					id="password"
+					placeholder="Пароль"
+					name="password"
+					class="input"
+					required
+				/>
+				<label class="label for="password">Подтвердите пароль</label>
+				<input
+					type="password"
+					id="password"
+					placeholder="Пароль"
+					name="password"
+					class="input"
+					required
+				/>
+                
+			</fieldset>
+			<fieldset class="form-group">
+               <label class="label checkbox-label">
+          <input class="checkbox" type="checkbox" name="checkbox" required />
+          <span class="checkbox-text">Я принимаю правила</span>
+        </label>
+			</fieldset>
+			<button class="button">Отправить</button>
+		</form>
+	</body>
+</html>

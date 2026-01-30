@@ -43,13 +43,7 @@ body {
 	text-align: right;
 }
 .phone p {
-	font-weight: 300;
-	font-size: 14px;
-	letter-spacing: 0.04em;
-	text-transform: uppercase;
 	text-align: right;
-	color: #858e8a;
-	padding-bottom: 8px;
 }
 .phone a {
 	font-weight: 500;
@@ -76,6 +70,7 @@ body {
 
 .footer-top {
 	border-bottom: 1px solid #d3cbd9;
+
 	padding-bottom: 40px;
 	margin-bottom: 40px;
 }
@@ -114,4 +109,14 @@ body {
 	font-size: 14px;
 	letter-spacing: 0.04em;
 	color: #858e8a;
+}
+
+.text-sub {
+	font-weight: 300;
+	font-size: 14px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	text-align: right;
+	color: #858e8a;
+	padding-bottom: 8px;
 }

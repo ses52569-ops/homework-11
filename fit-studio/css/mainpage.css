@@ -107,8 +107,6 @@
 }
 
 .news-container {
-	width: 290px;
-	height: 342px;
 	display: flex;
 	justify-content: center;
 
@@ -116,6 +114,8 @@
 }
 
 .news-article {
+	width: 290px;
+	height: 342px;
 	display: flex;
 	flex-direction: column;
 	border: 1px solid #d3cbd9;

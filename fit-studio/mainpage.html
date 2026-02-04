@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="ru" class="home-page">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,8 +7,9 @@
 		<link rel="stylesheet" href="./css/normalize.css" />
 		<link rel="stylesheet" href="./css/fonts.css" />
 		<link rel="stylesheet" href="./css/globals.css" />
+		<link rel="stylesheet" href="./css/header.css" />
 		<link rel="stylesheet" href="./css/index.css" />
-		<link rel="stylesheet" href="./css/mainpage.css" />
+		<link rel="stylesheet" href="./css/footer.css" />
 		<link
 			rel="icon"
 			type="image/svg+xml"
@@ -18,46 +19,46 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="container container-header">
-				<div class="logo">
-					<a href="/"
-						><img
-							src="./images/logo.svg"
-							width="84px"
-							height="45px"
-							alt="Логотип fit-studio"
-					/></a>
-				</div>
-				<div class="phone text-sub">
-					<p>Первое посещение бесплатно</p>
-					<a href="tel:+79282822882">+7 (928) 282-28-82</a>
+			<div class="container">
+				<div class="header-inner">
+					<a href="/">
+						<img
+							src="./images/logo-icon.svg"
+							width="84"
+							height="45"
+							alt="Логотип Fit Studio"
+						/>
+					</a>
+					<div class="phone text-sub">
+						<p>Первое посещение бесплатно</p>
+						<a href="tel:+79282822882">+7 (928) 282-28-82</a>
+					</div>
 				</div>
 			</div>
 		</header>
 		<section class="hero section">
 			<div class="container hero-container">
-				<div class="title-hero">
-					<h1>Подтянутое тело за месяц тренировок</h1>
-					<p>
+				<div class="hero-info">
+					<h1>Подтянутое тело <strong>за месяц</strong> тренировок</h1>
+					<p class="text">
 						Программа тренировки включает в себя разнообразные упражнения,
 						направленные на развитие силы и мышечного тонуса.
 					</p>
-					<a class="button-hero" href="#">Посмотреть программу</a>
+					<a class="button" href="#">Посмотреть программу</a>
 				</div>
-
-				<div class="pictures-hero">
-					<p>Выбери своего тренера</p>
+				<div class="hero-images">
+					<p class="hero-choose text">Выбери своего тренера</p>
 					<img
-						src="./images/Trainer-man.png"
-						alt="Подтянутый мужчина с гантелями в руках"
-						width="353"
-						height="513"
-					/>
-					<img
-						src="./images/Trainer-woman.png"
-						alt="Подтянутая женщин со скакалкой в руках"
+						src="./images/sporty-woman-img.jpg"
 						width="347"
 						height="513"
+						alt="Спортивная девушка держит в руках скакалку"
+					/>
+					<img
+						src="./images/sporty-man-img.jpg"
+						width="353"
+						height="513"
+						alt="Спортивный мужчина держит в руках гантели"
 					/>
 				</div>
 			</div>
@@ -65,92 +66,88 @@
 		<section class="news section">
 			<div class="container">
 				<h2 class="title-large">Последние новости</h2>
-			</div>
-			<div class="news-container">
-				<article class="news-article">
-					<header>
-						<img
-							src="./images/newspicture1.png"
-							alt="Велотренажёры"
-							width="290"
-							height="203"
-						/>
-						<div class="news-info">
-							<time class="news-date text-sub" datetime="01.01.0001"
-								>01.01.0001</time
-							>
-							<h3 class="title-small">
-								Открытие нового филиала в центре города!
-							</h3>
-						</div>
-					</header>
-					<footer>
-						<a class="news-link" href="#">Подробнее</a>
-					</footer>
-				</article>
-				<article class="news-article">
-					<header>
-						<img
-							src="./images/Women-training.png"
-							alt="Групповая женская тренировка"
-							width="290"
-							height="203"
-						/>
-						<div class="news-info">
-							<time class="news-date text-sub" datetime="17-04-2024"
-								>17.04.2024</time
-							>
-							<h3 class="title-small">
-								Запуск новой программы тренировок для начинающих
-							</h3>
-						</div>
-					</header>
-					<footer>
-						<a class="news-link" href="#">Подробнее</a>
-					</footer>
-				</article>
-				<article class="news-article">
-					<header>
-						<img
-							src="./images/cycle-training-news.png"
-							alt="Велотренажёры"
-							width="290"
-							height="203"
-						/>
-						<div class="news-info">
-							<time class="news-date text-sub" datetime="01-01-0001"
-								>01.01.0001</time
-							>
-							<h3 class="title-small">
-								Открытие нового филиала в центре города!
-							</h3>
-						</div>
-					</header>
-					<footer>
-						<a class="news-link" href="#">Подробнее</a>
-					</footer>
-				</article>
-				<article class="news-article">
-					<header>
-						<img
-							src="./images/treadmill-news.png"
-							alt="Девушка в сером топике занимается на беговой дорожке"
-							width="290"
-							height="203"
-						/>
-						<div class="news-info">
-							<time class="news-date text-sub" datetime="08-04-2024"
-								>08.04.2024</time
-							>
-							<h3 class="title-small">
-								Открыт конкурс на лучший фитнес-челлендж
-							</h3>
-						</div>
-					</header>
-					<footer>
-						<a class="news-link" href="#">Подробнее</a>
-					</footer>
-				</article>
+				<div class="news-container">
+					<article class="news-article">
+						<header>
+							<img
+								src="./images/news/news-1-img.jpg"
+								width="284"
+								height="203"
+								alt="Велотренажеры в спортивном зале"
+							/>
+							<div class="news-info">
+								<time class="news-date text-sub" datetime="2024-04-19">
+									19.04.2024
+								</time>
+								<h3 class="text">Открытие нового филиала в центре города!</h3>
+							</div>
+						</header>
+						<footer>
+							<a class="news-link" href="article.html">Подробнее</a>
+						</footer>
+					</article>
+					<article class="news-article">
+						<header>
+							<img
+								src="./images/news/news-2-img.jpg"
+								width="284"
+								height="203"
+								alt="Группа женщин занимается спортом"
+							/>
+							<div class="news-info">
+								<time class="news-date text-sub" datetime="2024-04-17">
+									17.04.2024
+								</time>
+								<h3 class="text">
+									Запуск новой программы тренировок для начинающих
+								</h3>
+							</div>
+						</header>
+						<footer>
+							<a class="news-link" href="article.html">Подробнее</a>
+						</footer>
+					</article>
+					<article class="news-article">
+						<header>
+							<img
+								src="./images/news/news-3-img.jpg"
+								width="284"
+								height="203"
+								alt="Две девушки занимаются на велотренажерах"
+							/>
+							<div class="news-info">
+								<time class="news-date text-sub" datetime="2024-04-13">
+									13.04.2024
+								</time>
+								<h3 class="text">
+									Специальное предложение для студентов и школьников
+								</h3>
+							</div>
+						</header>
+						<footer>
+							<a class="news-link" href="article.html">Подробнее</a>
+						</footer>
+					</article>
+					<article class="news-article">
+						<header>
+							<img
+								src="./images/news/news-4-img.jpg"
+								width="284"
+								height="203"
+								alt="Девушка на беговой дорожке"
+							/>
+							<div class="news-info">
+								<time class="news-date text-sub" datetime="2024-04-08">
+									08.04.2024
+								</time>
+								<h3 class="text">Открыт конкурс на лучший фитнес-челлендж</h3>
+							</div>
+						</header>
+						<footer>
+							<a class="news-link" href="article.html">Подробнее</a>
+						</footer>
+					</article>
+				</div>
 			</div>
 		</section>
 		<section class="faq section">
@@ -158,12 +155,11 @@
 				<h2 class="title-large">Вопросы и ответы</h2>
 				<div class="faq-container">
 					<img
-						src="./images/final-women.jpg"
-						alt="Девушка в красном топике с гантелями"
+						src="./images/sporty-woman-2-img.jpg"
 						width="492"
 						height="531"
+						alt="Спортивная девушка с гантелями"
 					/>
-
 					<div>
 						<details name="faq" open>
 							<summary class="title-medium">
@@ -216,8 +212,8 @@
 							<p class="text">
 								Наш сайт подключен к интернет-эквайрингу, и вы можете оплатить
 								товар или услугу банковской картой Visa, MasterCard, Maestro и
-								МИР. Также в наших клубах возможна наличная оплата при посещении
-								фитнес-центра.
+								МИР. Также в наших клубах возможна наличная оплата при
+								посещенииß фитнес-центра.
 							</p>
 						</details>
 					</div>
@@ -225,18 +221,17 @@
 			</div>
 		</section>
 		<footer class="footer">
-			<div class="container container-footer">
-				<div class="footer-top">
-					<div class="logo-footer">
-						<a href="/"
-							><img
-								src="./images/logo.svg"
-								width="84px"
-								height="45px"
-								alt="Логотип fit-studio"
-						/></a>
-					</div>
-					<nav class="navigation">
+			<div class="footer-top">
+				<div class="container">
+					<a class="footer-logo" href="/">
+						<img
+							src="./images/logo-icon.svg"
+							width="84"
+							height="45"
+							alt="Логотип Fit Studio"
+						/>
+					</a>
+					<nav class="menu">
 						<ul>
 							<li><a href="#">Клубы</a></li>
 							<li><a href="#">Тренировки</a></li>
@@ -246,9 +241,9 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="footer-bottom">
-					<p>&copy; Copyright. Все права защищены</p>
-				</div>
+			</div>
+			<div class="container">
+				<p class="copyright">&copy; Copyright. Все права защищены</p>
 			</div>
 		</footer>
 	</body>

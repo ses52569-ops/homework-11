@@ -31,11 +31,19 @@ button:focus-visible {
 	outline-offset: 2px;
 }
 
+.title-sm,
 .title-md {
 	font-weight: 600;
-	font-size: clamp(32px, 0.936rem + 4.54vw, 60px);
 	text-transform: uppercase;
 	color: var(--main-color);
+}
+
+.title-md {
+	font-size: clamp(32px, 0.936rem + 4.54vw, 60px);
+}
+
+.title-sm {
+	font-size: clamp(24px, 1.023rem + 2.04vw, 32px);
 }
 
 .text-light,
@@ -51,4 +59,28 @@ button:focus-visible {
 
 .text-regular {
 	font-weight: 400;
+}
+
+@media (width > 576px) {
+	.section {
+		padding-bottom: 140px;
+	}
+}
+
+@media (width <= 576px) {
+	.section {
+		padding-bottom: 80px;
+	}
+}
+
+@media (width > 576px) {
+	.section__title {
+		padding-bottom: 40px;
+	}
+}
+
+@media (width <= 576px) {
+	.section__title {
+		padding-bottom: 30px;
+	}
 }

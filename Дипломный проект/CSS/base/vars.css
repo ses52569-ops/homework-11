@@ -1,0 +1,11 @@
+:root {
+	/* font-family */
+	--font-family-text: "satoshi", sans-serif;
+	--font-family-title: "Fontspring-DEMO-integralcf", sans-serif;
+
+	/* container */
+	--container-width: 1440px;
+	--container-padding: 15px;
+
+	--main-color: #000;
+}

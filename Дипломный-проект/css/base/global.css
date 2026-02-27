@@ -1,0 +1,23 @@
+.Page {
+	display: flex;
+	justify-content: center;
+
+	font-family: var(--font-family-text);
+	font-weight: 400;
+	scroll-behavior: smooth;
+	scroll-padding-top: 98px;
+	scrollbar-gutter: stable;
+}
+
+.page__body {
+	min-width: 390px;
+}
+
+.page__body--no-scroll {
+	overflow-y: hidden;
+}
+
+.container {
+	max-width: var(--container-width);
+	margin: auto;
+}

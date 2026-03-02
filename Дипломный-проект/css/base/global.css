@@ -1,0 +1,43 @@
+.Page {
+	display: flex;
+	justify-content: center;
+
+	font-family: var(--font-family-text);
+	font-weight: 400;
+	scroll-behavior: smooth;
+	scroll-padding-top: 98px;
+	scrollbar-gutter: stable;
+}
+
+title,
+button {
+	font-family: var(--font-family-title);
+}
+
+.page__body {
+	min-width: 390px;
+}
+
+.page__body--no-scroll {
+	overflow-y: hidden;
+}
+
+.container {
+	width: min(var(--container-width), 100% - var(--container-padding) * 2);
+	margin-inline: auto;
+	padding-inline: var(--container-padding);
+}
+
+.text-comment {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 138%;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.title-large {
+	font-weight: 900;
+	font-size: 57px;
+	line-height: 112%;
+	color: #000;
+}

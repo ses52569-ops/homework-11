@@ -1,7 +1,4 @@
 .Page {
-	display: flex;
-	justify-content: center;
-
 	font-family: var(--font-family-text);
 	font-weight: 400;
 	scroll-behavior: smooth;
@@ -15,6 +12,7 @@ button {
 }
 
 .page__body {
+	width: 100%;
 	min-width: 390px;
 }
 
@@ -32,12 +30,60 @@ button {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 138%;
-	color: rgba(0, 0, 0, 0.6);
+	color: var(--text-color);
+}
+
+.text-button {
+	font-weight: 500;
+	font-size: 16px;
+	color: var(--main-color);
 }
 
 .title-large {
 	font-weight: 900;
 	font-size: 57px;
 	line-height: 112%;
+	color: var(--main-color);
+}
+
+.title-mid {
+	font-weight: 900;
+	font-size: 48px;
+	text-align: center;
+	color: var(--main-color);
+	padding-bottom: 55px;
+}
+
+.title-small {
+	font-weight: 700;
+	font-size: 20px;
+	color: var(--main-color);
+}
+
+.price {
+	font-weight: 700;
+	font-size: 24px;
 	color: #000;
+}
+
+.discount {
+	font-weight: 700;
+	font-size: 24px;
+	text-decoration: line-through;
+	color: rgba(0, 0, 0, 0.4);
+}
+
+.discount-percent {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	font-size: 12px;
+	border-radius: 62px;
+	padding: 6px 14px;
+	width: 58px;
+	height: 28px;
+	color: var(--discount-percent-color);
+	background: var(--discount-percent-bg-color);
 }

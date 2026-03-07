@@ -1,11 +1,16 @@
 .header__container {
 	display: flex;
-	justify-content: center;
+
 	text-align: center;
 	align-items: center;
 	gap: clamp(15px, 0.357rem + 2.38vw, 40px);
 	margin-top: 24px;
 	padding-bottom: 24px;
+	transition: box-shadow var(--transition-time);
+}
+
+.header--fixed {
+	box-shadow: 0 0 20px var(--bg-color);
 }
 
 @media (width <= 992px) {
@@ -127,7 +132,7 @@
 	padding: 12px 16px;
 	width: clamp(400px, 16.696rem + 13.39vw, 460px);
 	height: 48px;
-	background: #f0f0f0;
+	background: var(--bg-color);
 	border-radius: 62px;
 }
 

@@ -1,0 +1,23 @@
+.choose-your-style__container {
+	background-color: var(--bg-color);
+	border-radius: 40px;
+	margin-bottom: 68px;
+}
+
+.choose-your-style__title {
+	padding-top: 70px;
+}
+
+.choose-your-style__list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding-inline: 64px;
+	padding-bottom: 76px;
+}
+
+.choose-your-style__list-up-row,
+.choose-your-style__list-down-row {
+	display: flex;
+	gap: 20px;
+}

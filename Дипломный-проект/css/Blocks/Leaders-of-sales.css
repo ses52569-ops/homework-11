@@ -1,0 +1,61 @@
+.Leaders-of-sales {
+	margin-bottom: 92px;
+}
+
+.Leaders-of-sales__list {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding-bottom: 36px;
+}
+
+.Leaders-of-sales__list-item-img {
+	padding-bottom: 16px;
+}
+
+.Leaders-of-sales__list-item-info {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.list-item-info__rating {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	gap: 13px;
+}
+
+.list-item-info__rating-numbers-5 {
+	color: var(--text-color);
+}
+
+.list-item-info__price-section {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	gap: 10px;
+}
+
+.Leaders-of-sales__get-more-button {
+	margin: auto;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	border: 1px solid var(--border-color);
+	border-radius: 62px;
+	padding: 16px 54px;
+	transition:
+		opacity var(--transition-time),
+		color var(--transition-time);
+}
+@media (any-hover: hover) {
+	.Leaders-of-sales__get-more-button:hover {
+		opacity: 0.5;
+	}
+
+	.Leaders-of-sales__get-more-button:active {
+		opacity: var(--main-color);
+	}
+}

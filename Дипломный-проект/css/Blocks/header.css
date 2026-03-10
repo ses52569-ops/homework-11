@@ -55,15 +55,6 @@
 		width: 24px;
 		height: 24px;
 	}
-	.burger-icon-menu,
-	.burger--open .burger-icon-cross {
-		display: block;
-	}
-
-	.burger-icon-cross,
-	.burger--open .burger-icon-menu {
-		display: none;
-	}
 }
 
 .header__logo {
@@ -195,4 +186,14 @@
 	.header__actions {
 		gap: 12px;
 	}
+}
+
+.burger__icon-menu,
+.burger--open .burger__icon-cross {
+	display: block;
+}
+
+.burger__icon-cross,
+.burger--open .burger__icon-menu {
+	display: none;
 }

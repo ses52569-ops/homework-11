@@ -3,12 +3,21 @@ export default class BurgerMenu {
 		this.config = config;
 		this.burgerButton = document.querySelector(`.${this.config.BURGER}`);
 		this.burgerMenu = document.querySelector(`.${this.config.HEADER_MENU}`);
-		this.body = document.querySelector(`.${this.config.PAGE_BODY}`);
+		// Исправлено: Используем класс "Page__body", который есть у <html>,
+		// либо, более корректно, находим <body> напрямую, если он не имеет класса.
+		// Предполагая, что <body> должен быть выбран, даже если у него нет класса.
+		this.body = document.body; // Предполагаем, что <body> - это тот элемент, который нужно блокировать.
 		this.headerFixedInstance = headerFixedInstance;
-		this.main = document.querySelector(`.${this.config.MAIN}`);
+		// Исправлено: Добавляем точку перед классами для querySelector
+		this.main = document.querySelector(`main.${this.config.MAIN}`); // Убрана точка, если MAIN - это имя тега, либо добавлена, если это класс
 
 		if (!this.burgerButton || !this.burgerMenu || !this.body) {
-			throw new Error('Required DOM elements are missing.');
+			throw new Error("Required DOM elements are missing.");
+		}
+
+		// Исправлено: Добавлена проверка, если MAIN элемент не найден
+		if (this.config.MAIN && !this.main) {
+			console.warn(`Main element with class "${this.config.MAIN}" not found.`);
 		}
 
 		this.isMobileView = window.innerWidth <= this.config.BREAKPOINT;
@@ -21,7 +30,7 @@ export default class BurgerMenu {
 		this.onWindowResize = this.onWindowResize.bind(this);
 
 		this.manageEvents();
-		window.addEventListener('resize', this.onWindowResize);
+		window.addEventListener("resize", this.onWindowResize);
 	}
 
 	manageEvents() {
@@ -34,25 +43,21 @@ export default class BurgerMenu {
 	}
 
 	initEvents() {
-		// Click events
-		this.burgerButton.addEventListener('click', this.onBurgerClick);
-		this.body.addEventListener('click', this.onBodyClick);
+		this.burgerButton.addEventListener("click", this.onBurgerClick);
+		this.body.addEventListener("click", this.onBodyClick);
 
-		// Touch events
-		this.body.addEventListener('touchstart', this.handleTouchStart);
-		this.body.addEventListener('touchmove', this.handleTouchMove);
-		this.body.addEventListener('touchend', this.handleTouchEnd);
+		this.body.addEventListener("touchstart", this.handleTouchStart);
+		this.body.addEventListener("touchmove", this.handleTouchMove);
+		this.body.addEventListener("touchend", this.handleTouchEnd);
 	}
 
 	removeEvents() {
-		// Click events
-		this.burgerButton.removeEventListener('click', this.onBurgerClick);
-		this.body.removeEventListener('click', this.onBodyClick);
+		this.burgerButton.removeEventListener("click", this.onBurgerClick);
+		this.body.removeEventListener("click", this.onBodyClick);
 
-		// Touch events
-		this.body.removeEventListener('touchstart', this.handleTouchStart);
-		this.body.removeEventListener('touchmove', this.handleTouchMove);
-		this.body.removeEventListener('touchend', this.handleTouchEnd);
+		this.body.removeEventListener("touchstart", this.handleTouchStart);
+		this.body.removeEventListener("touchmove", this.handleTouchMove);
+		this.body.removeEventListener("touchend", this.handleTouchEnd);
 	}
 
 	onWindowResize() {
@@ -64,7 +69,6 @@ export default class BurgerMenu {
 		}
 	}
 
-	// Click events
 	onBurgerClick() {
 		const isOpen = this.burgerButton.classList.toggle(this.config.BURGER_OPEN);
 		this.burgerButton.ariaLabel = isOpen
@@ -74,8 +78,9 @@ export default class BurgerMenu {
 		this.burgerMenu.classList.toggle(this.config.HEADER_MENU_OPEN, isOpen);
 		this.body.classList.toggle(this.config.PAGE_BODY_NO_SCROLL, isOpen);
 
+		// Исправлено: Проверяем this.main перед обращением к его стилям
 		if (this.main) {
-			this.main.style.pointerEvents = isOpen ? 'none' : '';
+			this.main.style.pointerEvents = isOpen ? "none" : "";
 		}
 
 		if (this.headerFixedInstance) {
@@ -96,7 +101,7 @@ export default class BurgerMenu {
 		this.body.classList.remove(this.config.PAGE_BODY_NO_SCROLL);
 
 		if (this.main) {
-			this.main.style.pointerEvents = '';
+			this.main.style.pointerEvents = "";
 		}
 
 		if (wasOpen && this.headerFixedInstance) {
@@ -124,11 +129,10 @@ export default class BurgerMenu {
 		}
 	}
 
-	// Touch events
 	handleTouchStart(event) {
 		if (!this.isBurgerMenuOpen()) return;
 		this.touchStartX = event.changedTouches[0].screenX;
-		this.burgerMenu.style.transition = 'none';
+		this.burgerMenu.style.transition = "none";
 	}
 
 	handleTouchMove(event) {
@@ -143,8 +147,8 @@ export default class BurgerMenu {
 		const touchEndX = event.changedTouches[0].screenX;
 		const swipeDistance = touchEndX - this.touchStartX;
 
-		this.burgerMenu.style.transition = '';
-		this.burgerMenu.style.right = '';
+		this.burgerMenu.style.transition = "";
+		this.burgerMenu.style.right = "";
 
 		if (swipeDistance > 70) {
 			this.hideBurgerMenu();

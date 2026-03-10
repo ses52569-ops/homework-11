@@ -17,7 +17,7 @@ try {
 				OPEN: "Открыть меню",
 				CLOSE: "Закрыть меню",
 			},
-			PAGE_BODY: "Page__body",
+			PAGE_BODY: "Ppge__body",
 			PAGE_BODY_NO_SCROLL: "Page__body--no-scroll",
 			MENU_LINK: "menu__link",
 			BREAKPOINT: 768,

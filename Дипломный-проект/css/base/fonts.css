@@ -10,11 +10,11 @@
 }
 
 @font-face {
-	font-family: Fontspring-DEMO;
+	font-family: IntegraICF;
 	src:
-		local("Fontspring DEMO integralcf heavy"),
-		local("Fontspring-DEMO-integralcf-heavy"),
-		url("../../fonts/Fontspring-DEMO-integralcf-heavy.woff2") format("woff2");
+		local("IntegraICF Heavy"),
+		local("IntegraICF-Heavy"),
+		url("../../fonts/IntegraICF-Heavy.woff2") format("woff2");
 	font-weight: 900;
 	font-style: normal;
 	font-display: swap;

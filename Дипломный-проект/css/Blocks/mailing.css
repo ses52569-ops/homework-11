@@ -10,12 +10,28 @@
 	background: var(--main-color);
 }
 
+@media (width <= 768px) {
+	.mailing__container {
+		flex-direction: column;
+		text-align: center;
+		padding: 32px 34px;
+		gap: 32px;
+	}
+}
+
 .mailing__title {
 	color: #fff;
 	font-weight: 900;
 	font-size: 40px;
 	line-height: 113%;
 	color: #fff;
+}
+
+@media (width <= 992px) {
+	.mailing__title {
+		font-size: 30px;
+		line-height: 117%;
+	}
 }
 
 .mailing__interact {

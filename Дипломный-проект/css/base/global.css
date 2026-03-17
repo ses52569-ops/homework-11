@@ -6,8 +6,8 @@
 	scrollbar-gutter: stable;
 }
 
-title,
-button {
+h1,
+h2 {
 	font-family: var(--font-family-title);
 }
 
@@ -33,6 +33,20 @@ button {
 	color: var(--text-color);
 }
 
+@media (width <= 768px) {
+	.title-comment {
+		font-size: 14px;
+		line-height: 157%;
+	}
+}
+
+@media (width <= 526px) {
+	.title-comment {
+		font-size: 12px;
+		line-height: 183%;
+	}
+}
+
 .text-button {
 	font-weight: 500;
 	font-size: 16px;
@@ -46,12 +60,42 @@ button {
 	color: var(--main-color);
 }
 
+@media (width <= 992px) {
+	.title-large {
+		font-size: 50px;
+		line-height: 110%;
+	}
+}
+
+@media (width <= 768px) {
+	.title-large {
+		font-size: 45px;
+		line-height: 106%;
+	}
+}
+
+@media (width <= 480px) {
+	.title-large {
+		font-size: 32px;
+		line-height: 106%;
+	}
+}
+
 .title-mid {
 	font-weight: 900;
 	font-size: 48px;
-	text-align: center;
+	white-space: nowrap;
 	color: var(--main-color);
 	padding-bottom: 55px;
+}
+
+@media (width <= 768px) {
+	.title-mid {
+		font-weight: 900;
+		font-size: 30px;
+		color: #000;
+		padding-bottom: 32px;
+	}
 }
 
 .title-small {
@@ -60,10 +104,22 @@ button {
 	color: var(--main-color);
 }
 
+@media (width <= 526px) {
+	.title-small {
+		font-size: 15px;
+	}
+}
+
 .price {
 	font-weight: 700;
 	font-size: 24px;
 	color: #000;
+}
+
+@media (width <= 526px) {
+	.price {
+		font-size: 18px;
+	}
 }
 
 .discount {
@@ -71,6 +127,12 @@ button {
 	font-size: 24px;
 	text-decoration: line-through;
 	color: rgba(0, 0, 0, 0.4);
+}
+
+@media (width <= 526px) {
+	.discount {
+		font-size: 18px;
+	}
 }
 
 .discount-percent {
@@ -86,4 +148,14 @@ button {
 	height: 28px;
 	color: var(--discount-percent-color);
 	background: var(--discount-percent-bg-color);
+}
+
+@media (width <= 526px) {
+	.discount-percent {
+		font-size: 10px;
+		border-radius: 62px;
+		padding: 6px 14px;
+		width: 40px;
+		height: 20px;
+	}
 }

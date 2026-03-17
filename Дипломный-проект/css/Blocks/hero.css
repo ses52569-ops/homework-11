@@ -1,10 +1,21 @@
-.hero__section {
+.hero {
 	background: #f2f0f1;
 }
 
-.hero__wrapper::before {
+.hero__container {
+	display: flex;
+}
+
+@media (width <= 992px) {
+	.hero__container {
+		flex-direction: column;
+	}
+}
+
+/*.hero__wrapper::before {
 	content: "";
 	position: absolute;
+
 	z-index: var(--layer--1);
 	background-image: url(../../Images/fashion-menschen.png);
 	background-repeat: no-repeat;
@@ -19,22 +30,55 @@
 	z-index: var(--layer-0);
 	display: flex;
 }
-
+*/
 .hero__main-info {
 	display: flex;
 	flex-direction: column;
-	padding: 106px 0 116px 0px;
+	padding-top: 97px;
+	margin-bottom: 116px;
+}
+
+@media (width <= 992px) {
+	.hero__main-info {
+		padding-top: 55px;
+		margin-bottom: 0px;
+	}
+}
+
+@media (width <= 768px) {
+	.hero__main-info {
+		padding-top: 40px;
+	}
 }
 
 .hero__title {
 	max-width: 577px;
-	width: 100%;
 	margin-bottom: 34px;
+}
+
+@media (width <= 768px) {
+	.hero__title {
+		max-width: 500px;
+	}
+}
+
+@media (width <= 480px) {
+	.hero__title {
+		margin-bottom: 20px;
+		max-width: 322px;
+	}
 }
 
 .hero__main-info-text {
 	color: var(--text-color);
 	margin-bottom: 32px;
+	max-width: 551px;
+}
+
+@media (width <= 526px) {
+	.hero__main-info-text {
+		max-width: 358px;
+	}
 }
 
 .hero__main-info-button {
@@ -50,40 +94,84 @@
 	margin-bottom: 48px;
 }
 
-.hero__main-info-achivements {
+@media (width <= 768px) {
+	.hero__main-info-button {
+		width: 100%;
+		justify-content: center;
+	}
+}
+
+.hero__main-info-achievements {
 	display: flex;
-	gap: 64px;
+}
+
+.hero__main-info-achievements-first-row,
+.hero__main-info-achievements-second-row {
+	display: flex;
 	align-items: center;
 }
 
-.hero__achivements-number {
+@media (width <= 768px) {
+	.hero__main-info-achievements {
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		gap: 12px;
+	}
+}
+
+.hero__achievement {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	white-space: nowrap;
+}
+
+.hero__achievements-number {
 	font-weight: 700;
-	font-size: 36px;
-	color: #000;
+	font-size: 40px;
+	color: var(--main-color);
+}
+
+@media (width <= 526px) {
+	.hero__achievements-number {
+		font-size: 24px;
+	}
+}
+
+.achieve-border,
+.achieve-border--third {
+	padding-left: 32px;
+	margin-left: 32px;
+	border-left: 1px solid var(--border-color);
+}
+
+@media (width <= 768px) {
+	.achieve-border {
+		margin-left: 50px;
+		padding-left: 50px;
+	}
+
+	.achieve-border--third {
+		border: none;
+		margin-left: 0;
+		padding-left: 0;
+	}
+}
+
+@media (width <= 526px) {
+	.achieve-border {
+		margin-left: 28px;
+		padding-left: 28px;
+	}
 }
 
 .hero__img {
-	position: absolute;
-	top: 20%;
+	height: 680px;
 }
 
 .hero__black-star {
 	width: 56px;
 	height: 56px;
 	color: #000;
-}
-
-.brands {
-	background: var(--main-color);
-}
-
-.hero__brands-list {
-	display: flex;
-	justify-content: space-between;
-	text-align: center;
-	align-items: center;
-	gap: 106px;
-	padding-top: 44px;
-	padding-bottom: 44px;
-	margin-bottom: 72px;
 }

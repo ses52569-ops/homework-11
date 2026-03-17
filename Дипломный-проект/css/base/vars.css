@@ -1,7 +1,7 @@
 :root {
 	/* font-family */
 	--font-family-text: "satoshi", sans-serif;
-	--font-family-title: "Fontspring-DEMO-integralcf", sans-serif;
+	--font-family-title: "IntegraICF Heavy", sans-serif;
 
 	/* container */
 	--container-width: 1240px;
@@ -18,7 +18,7 @@
 	--layer-0: 0;
 	--layer-1: 1;
 	--layer-2: 2;
-	--layer-2: 3;
+	--layer-3: 3;
 
 	--transition-time: 0.2s;
 }

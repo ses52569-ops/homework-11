@@ -91,7 +91,7 @@
 				></use>
 			</svg>
 		</button>
-		<button
+		<button 
 		class="header__actions-button"
 		title="Корзина"
 		aria-label="Корзина"
@@ -116,9 +116,8 @@
 </div>
 </header>
 <main class="main">
-	<section class="section hero__section">
+			<section class="hero">
 		<div class="container hero__container">
-			<div class="hero__wrapper">
 				<div class="hero__main-info">
 					<h1 class="hero__title title-large">
 						НАЙДИ ОДЕЖДУ КОТОРАЯ ВЫРАЗИТ ТВОЙ СТИЛЬ
@@ -128,93 +127,91 @@
 								чтобы подчеркнуть ваш индивидуальный стиль.
 							</p>
 							<button class="hero__main-info-button">Купить сейчас</button>
-							<div class="hero__main-info-achivements">
-								<div class="hero__achivements">
-									<h3 class="hero__achivements-number">200+</h3>
-									<p class="hero__achivements-text text-comment">
+							<div class="hero__main-info-achievements">
+								<div class="hero__main-info-achievements-first-row">
+								<div class="hero__achievement ">
+									<h3 class="hero__achievements-number">200+</h3>
+									<p class="hero__achievements-text text-comment">
 										Всемирных брендов
 									</p>
 								</div>
-								<div class="hero__achivements">
-									<h3 class="hero__achivements-number">2000+</h3>
-									<p class="hero__achivements-text text-comment">
+								<div class="hero__achievement achieve-border">
+									<h3 class="hero__achievements-number">2000+</h3>
+									<p class="hero__achievements-text text-comment">
 										Качественных товаров
 									</p>
 								</div>
-								<div class="hero__achivements">
-									<h3 class="hero__achivements-number">30,000+</h3>
-									<p class="hero__achivements-text text-comment">
+								</div>
+								<div class="hero__main-info-achievements-second-row">
+								<div class="hero__achievement achieve-border--third">
+									<h3 class="hero__achievements-number">30,000+</h3>
+									<p class="hero__achievements-text text-comment">
 										Счастливых клиентов
 									</p>
+								</div>
 								</div>
 							</div>
 						</div>
 						<div class="hero__img">
-							<svg width="56" height="56">
-								<use
-									class="hero__black-star"
-									href="./icons/black-star.svg"
-								></use>
-							</svg>
-							<svg width="56" height="56">
-								<use
-									class="hero__black-star"
-									href="./icons/black-star.svg"
-								></use>
-							</svg>
+							<img src="./Images/hero.png"
+							 alt="">
 						</div>
-					</div>
-					</section>
-					<section class="brands">
+					
+			</section>
+			<section class="brands">
 						<div class="container container__brends">
-					<div class="hero__brands">
-						<ul class="hero__brands-list">
-							<li class="hero__brands-list-item">
+					<div class="brands">
+						<ul class="brands-list">
+							<div class="brands-list-first-group">
+							<li class="brands-list-item">
 								<a href="#"
-									><svg width="166" height="33">
+									><svg id="versace" width="166" height="33">
 										<use
-											class="hero__brands-icon-link"
+											class="brands-icon-link"
 											href="./icons/sprite-brands.svg#Versace"
 										></use></svg
 								></a>
 							</li>
-							<li class="hero__brands-list-item">
+							<li class="brands-list-item">
 								<a href="#"
-									><svg width="91" height="38">
+									><svg id="zara" width="91" height="38">
 										<use
-											class="hero__brands-icon-link"
+											class="brands-icon-link--zara"
 											href="./icons/sprite-brands.svg#Zara"
 										></use></svg
 								></a>
 							</li>
-							<li class="hero__brands-list-item">
+							<li class="brands-list-item">
 								<a href="#"
-									><svg width="156" height="36">
+									><svg id="gucci" width="156" height="36">
 										<use
-											class="hero__brands-icon-link"
+											class="brands-icon-link--gucci"
 											href="./icons/sprite-brands.svg#Gucci"
 										></use></svg
 								></a>
 							</li>
-							<li class="hero__brands-list-item">
+							</div>
+							<div class="brands-list-second-group">
+							<li class="brands-list-item">
 								<a href="#"
-									><svg width="194" height="32">
+									><svg id="prada" width="194" height="32">
 										<use
-											class="hero__brands-icon-link"
+											class="brands-icon-link--prada"
 											href="../icons/sprite-brands.svg#Prada"
 										></use></svg
 								></a>
 							</li>
-							<li class="hero__brands-list-item">
+							<li class="brands-list-item">
 								<a href="#">
-									<svg width="207" height="34">
+									<svg id="calvin-klein" width="207" height="34">
 										<use
-											class="hero__brands-icon-link"
+											class="brands-icon-link--calvin-klein"
 											href="./icons/sprite-brands.svg#Calvin-klein">
 										</use>
 									</svg>
 									</a>
 							</li>
+							</div>
 						</ul>
 					</div>
 				</div>
@@ -223,16 +220,14 @@
 				<div class="container new-arrivals__container">
 				<h2 class="new-arrivals__title title-mid">Новые поступления</h2>
 				<div class="new-arrivals__list">
-					<div class="new-arrivals__list-first-row">
 <article class="new-arrivals__list-item">
 	<a class="new-arrivals__item-link" href="#">
 	<img class="new-arrivals__list-item-img" src="./Images/New-supplies-1-Black-T-shirt.png" alt="Чёрная футболка с белой надписью "New Rules" >
 	<div class="new-arrivals__list-item-info">
-		<h3 class="list-item-info__title title-small" >футболка с лентой</h3>
+		<h3 class="list-item-info__title title-small" >Футболка с лентой</h3>
 		<div class="list-item-info__rating">
-			<svg width="104" height="19">
+			<svg class="list-item-info__rating-stars-4-5">
 					<use
-						class="list-item-info__rating-stars"
 						href="./icons/sprite-stars.svg#4.5-stars">
 					</use>
 			</svg>
@@ -250,9 +245,9 @@
 	<div class="new-arrivals__list-item-info">
 		<h3 class="list-item-info__title title-small" >Узкие джинсы</h3>
 		<div class="list-item-info__rating">
-			<svg width="81" height="19">
+			<svg class="list-item-info__rating-stars-3-5">
 					<use
-						class="list-item-info__rating-stars"
+						
 						href="./icons/sprite-stars.svg#3.5-stars">
 					</use>
 			</svg>
@@ -266,9 +261,7 @@
 		</div>
 		</a>
 </article>
-</div>
-<div class="new-arrivals__list-second-row">
-<article class="new-arrivals__list-item">
+<article class="new-arrivals__list-item arrival-3">
 	<a class="new-arrivals__item-link" href="#">
 	<img class="new-arrivals__list-item-img" src="./Images/New-supplies-3-shirt.png" alt="Красно-синя-белая рубашка в клетку">
 	<div class="new-arrivals__list-item-info">
@@ -288,7 +281,7 @@
 	</div>
 	</a>
 </article>
-<article class="new-arrivals__list-item">
+<article class="new-arrivals__list-item arrival-4">
 	<a class="new-arrivals__item-link" href="#">
 	<img class="new-arrivals__list-item-img" src="./Images/New-supplies-4-orange-T-shirt.png" alt="Чёрная-оранжевая футболка">
 	<div class="new-arrivals__list-item-info">
@@ -308,7 +301,6 @@
 	</div>
 	</a>
 </article>
-</div>
 				</div>
 <button class="new-arrivals__get-more-button text-button">Посмотреть всё</button>
 				</div>
@@ -323,9 +315,9 @@
 	<div class="Leaders-of-sales__list-item-info">
 		<h3 class="list-item-info__title title-small" >Рубашка в полоску</h3>
 		<div class="list-item-info__rating">
-			<svg width="139" height="23">
+			<svg class="list-item-info__rating-stars-5">
 					<use
-						class="list-item-info__rating-stars"
+						class="list-item-info__rating-stars-5"
 						href="./icons/sprite-stars.svg#5-stars">
 					</use>
 			</svg>
@@ -345,9 +337,8 @@
 	<div class="Leaders-of-sales__list-item-info">
 		<h3 class="list-item-info__title title-small" >футболка с лентой</h3>
 		<div class="list-item-info__rating">
-			<svg width="90" height="19">
+			<svg class="list-item-info__rating-stars-4">
 					<use
-						class="list-item-info__rating-stars"
 						href="./icons/sprite-stars.svg#4-stars">
 					</use>
 			</svg>
@@ -359,7 +350,7 @@
 	</div>
 	</a>
 </article>
-<article class="Leaders-of-sales__list-item">
+<article class="Leaders-of-sales__list-item leader-3">
 	<a class="Leaders-of-sales__item-link" href="#">
 	<img class="Leaders-of-sales__list-item-img" src="./Images/Leader-of-sales-3.png" alt="Джинсовые бермуды">
 	<div class="Leaders-of-sales__list-item-info">
@@ -379,7 +370,7 @@
 	</div>
 	</a>
 </article>
-<article class="Leaders-of-sales__list-item">
+<article class="Leaders-of-sales__list-item leader-4">
 	<a class="Leaders-of-sales__item-link" href="#">
 	<img class="Leaders-of-sales__list-item-img" src="./Images/Leader-of-sales-4.png" alt="Потертые тёмные узкие джинсы" >
 	<div class="Leaders-of-sales__list-item-info">
@@ -408,20 +399,32 @@
 					<h2 class="choose-your-style__title title-mid">ВЫБЕРИ СВОЙ СТИЛЬ</h2>
 					<div class="choose-your-style__list">
 						<div class="choose-your-style__list-up-row">
-						<a href="" class="choose-your-style__link"><img src="./Images/choose-your-style-casual.png" alt=""></a>
-						<a href="" class="choose-your-style__link"><img src="./Images/choose-your-style-formal.png" alt=""></a>
+						<div class="choose-your-style__list-img-container">
+							<p class="choose-your-style__link-text">Свободный</p>
+						<a href="" class="choose-your-style__link"><img class="choose-your-style__link-img" src="./Images/choose-your-style-casual.png" alt=""></a>
+						</div>
+							<div class="choose-your-style__list-img-container">
+									<p class="choose-your-style__link-text">Формальный</p>
+						<a href="" class="choose-your-style__link"><img class="choose-your-style__link-img" src="./Images/choose-your-style-formal.png" alt=""></a>
+						</div>
 						</div>
 						<div class="choose-your-style__list-down-row">
-						<a href="" class="choose-your-style__link"><img src="./Images/choose-your-style-dressy.png" alt=""></a>
-						<a href="" class="choose-your-style__link"><img src="./Images/choose-your-style-sport.png" alt=""></a>
+							<div class="choose-your-style__list-img-container">
+								<p class="choose-your-style__link-text">Вечерний</p>
+						<a href="" class="choose-your-style__link"><img class="choose-your-style__link-img" src="./Images/choose-your-style-dressy.png" alt=""></a>
+						</div>
+						<div class="choose-your-style__list-img-container">
+							<p class="choose-your-style__link-text">Спорт</p>
+						<a href="" class="choose-your-style__link"><img class="choose-your-style__link-img" src="./Images/choose-your-style-sport.png" alt=""></a>
+						</div>
 						</div>
 					</div>
 				</div>
 			</section>
 			<section class="reviews">
 				<div class="container reviews__container">
-					<div class="reviews__header">
-						<h2 class="reviews__title title-mid">Что о нас говорят</h2>
+					<div class="reviews__header">						
+						<h2 class=" title-mid reviews__title">Что о нас говорят</h2>
 						<div class="reviews__header-swap-arrows">
 					<button class="reviews__header-swap-arrow-button">
 						<svg width="24" height="24">
@@ -444,9 +447,8 @@
 				<div class="reviews__list">
 					<article class="reviews__list-item">
 						<div class="reviews__list-item-stars">
-						<svg width="139" height="23">
-					<use
-						class="reviews__list-item-stars"
+						<svg class="reviews__list-item-stars-5">
+					<use	
 						href="./icons/sprite-stars.svg#5-stars">
 					</use>
 			</svg>	
@@ -459,11 +461,10 @@
 				«Я в восторге от качества и стиля одежды, которую получил от Shop.co. От повседневных вещей до элегантных платьев — каждая покупка превзошла мои ожидания.»
 			</p>
 					</article>
-					<article class="reviews__list-item">
+					<article class="reviews__list-item review-2">
 						<div class="reviews__list-item-stars">
-						<svg width="139" height="23">
+						<svg class="reviews__list-item-stars-5" >
 					<use
-						class="reviews__list-item-stars"
 						href="./icons/sprite-stars.svg#5-stars">
 					</use>
 			</svg>	
@@ -476,11 +477,11 @@
 			«Раньше было трудно найти одежду под мой стиль, пока я не открыл Shop.co. Их ассортимент впечатляет и подходит для разных вкусов и случаев.»
 			</p>
 					</article>
-					<article class="reviews__list-item">
+					<article class="reviews__list-item review-3">
 						<div class="reviews__list-item-stars">
-						<svg width="139" height="23">
+						<svg class="reviews__list-item-stars-5" >
 					<use
-						class="reviews__list-item-stars"
+						
 						href="./icons/sprite-stars.svg#5-stars">
 					</use>
 			</svg>	
@@ -500,7 +501,7 @@
 				<div class="container footer__container">
 						<section class="maialing">
 				<div class="container mailing__container">
-					<h2 class="mailing__title">БУДЬТЕ В КУРСЕ ВСЕХ ПОСЛЕДНИХ НОВОСТЕЙ</h2>
+					<h2 class="	mailing__title">БУДЬТЕ В КУРСЕ ВСЕХ ПОСЛЕДНИХ НОВОСТЕЙ</h2>
 					<div class="mailing__interact">
 						<div class="mailing__interact-email">
 						<label class="mailing__email-label">
@@ -525,18 +526,19 @@
 						<button class="mailing__subscribe">Подписаться на рассылку</button>
 					</div>
 				</div>
-			</section>	
 					<div class="footer__navigation-list">
+
 						<article class="footer__list-item-logo">
 								<a href="#" class="footer__logo logo">
 							<img
+							class="footer__logo-icon"
 								src="./icons/logo.svg"
 								width="166"
 								height="22"
 								alt="Логотип shop.co"
 							/>
 						</a>
-						<p class="footer__footer__navigation-list-item-text text-comment">У нас есть одежда, что подходит вашему стилю и которой можно гордиться. Для женщин и мужчин.</p>
+						<p class="footer__navigation-list-item-text text-comment">У нас есть одежда, что подходит вашему стилю и которой можно гордиться. Для женщин и мужчин.</p>
 						<div class="footer__media-links-list">
 							<svg width="28" height="28">
 							<use
@@ -564,6 +566,8 @@
 						</svg>
 						</div>
 						</article>
+					<div class="footer__navigation-list-menu">
+						<div class="footer__navigation-list-menu-first-row">
 						<article class="footer__navigation-list-item">
 								<p class="footer__navigation-list-item-title">Компания</p>
 								<div>
@@ -575,8 +579,8 @@
 								</ul>
 								</div>
 						</article>
-						</article>
 						<article class="footer__navigation-list-item">
+							
 								<p class="footer__navigation-list-item-title">Помощь</p>
 								<div>
 									<ul class="footer__navigation-list-item-menu text-comment">
@@ -586,7 +590,9 @@
 									<li class="footer__navigation-list-item-menu-item">Политика</li>
 								</ul>
 								</div>
-						</article>
+						</article>		
+						</div>
+						<div class="footer__navigation-list-menu-second-row">
 							<article class="footer__navigation-list-item">
 								<p class="footer__navigation-list-item-title">Вопросы</p>
 								<div>
@@ -609,6 +615,8 @@
 								</ul>
 								</div>
 							</article>
+							</div>
+						</div>
 						</div>
 						<div class="footer__end">
 							<p class="footer__end-text">

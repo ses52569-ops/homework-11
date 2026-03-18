@@ -1,5 +1,6 @@
 .hero {
 	background: #f2f0f1;
+	z-index: -1;
 }
 
 .hero__container {
@@ -32,6 +33,7 @@
 }
 */
 .hero__main-info {
+	z-index: 1;
 	display: flex;
 	flex-direction: column;
 	padding-top: 97px;
@@ -167,11 +169,12 @@
 }
 
 .hero__img {
-	height: 680px;
+	position: absolute;
+	z-index: 0;
 }
 
 .hero__black-star {
 	width: 56px;
 	height: 56px;
-	color: #000;
+	color: var(--main-color);
 }

@@ -1,0 +1,149 @@
+.new-arrivals {
+	padding-bottom: 64px;
+}
+
+@media (width <= 768px) {
+	.new-arrivals {
+		padding-bottom: 42px;
+	}
+}
+.new-arrivals__container {
+	border-bottom: 1px solid var(--border-color);
+}
+
+.new-arrivals__title {
+	text-align: center;
+}
+
+.new-arrivals__list {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	gap: 20px;
+	padding-bottom: 36px;
+}
+@media (width <= 992px) {
+	.arrival-4 {
+		display: none;
+	}
+}
+
+@media (width <= 768px) {
+	.arrival-3 {
+		display: none;
+	}
+	.new-arrivals__list {
+		gap: 10px;
+		justify-content: center;
+	}
+}
+
+@media (width > 526px) {
+	.new-arrivals__list-item-img {
+		padding-bottom: 16px;
+	}
+}
+
+@media (width <= 526px) {
+	.new-arrivals__list-item-img {
+		width: 174px;
+		height: 200px;
+		padding-bottom: 10px;
+	}
+}
+
+.new-arrivals__list-item-info {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+@media (width <= 526px) {
+	.new-arrivals__list-item-info {
+		gap: 5px;
+	}
+}
+
+.list-item-info__rating {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	gap: 13px;
+}
+
+@media (width <= 768px) {
+	.list-item-info__rating {
+		gap: 10px;
+	}
+}
+
+@media (width > 526px) {
+	.list-item-info__rating-stars-4-5 {
+		width: 104px;
+		height: 18px;
+	}
+	.list-item-info__rating-stars-3-5 {
+		width: 80px;
+		height: 18px;
+	}
+}
+
+@media (width <= 526px) {
+	.list-item-info__rating-stars-4-5 {
+		width: 87px;
+		height: 15px;
+	}
+
+	.list-item-info__rating-stars-3-5 {
+		width: 67px;
+		height: 15px;
+	}
+}
+
+.list-item-info__rating-numbers-5 {
+	color: var(--text-color);
+}
+
+.list-item-info__price-section {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	gap: 10px;
+}
+
+@media (width <= 768px) {
+	.list-item-info__price-section {
+		gap: 5px;
+	}
+}
+.new-arrivals__get-more-button {
+	margin: auto;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	border: 1px solid var(--border-color);
+	border-radius: 62px;
+	padding: 16px 54px;
+	margin-bottom: 64px;
+	transition:
+		opacity var(--transition-time),
+		color var(--transition-time);
+}
+
+@media (width <= 768px) {
+	.new-arrivals__get-more-button {
+		width: 100%;
+		margin-bottom: 42px;
+	}
+}
+
+@media (any-hover: hover) {
+	.new-arrivals__get-more-button:hover {
+		opacity: 0.5;
+	}
+
+	.new-arrivals__get-more-button:active {
+		opacity: var(--main-color);
+	}
+}

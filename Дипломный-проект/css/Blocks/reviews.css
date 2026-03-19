@@ -32,7 +32,7 @@
 
 .reviews__header-swap-arrows {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	gap: 16px;
 }
 

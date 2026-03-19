@@ -6,7 +6,10 @@
 		<title>E-commerce</title>
 		<link rel="stylesheet" href="./css/index.css" />
 		<script defer src="./Diplom.js/Diplom.js" type="module"></script>
-	
+		   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+		  <link
+			rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 	</head>
 	<body class="page__body">
 	<header class="header">
@@ -425,27 +428,30 @@
 				<div class="container reviews__container">
 					<div class="reviews__header">						
 						<h2 class=" title-mid reviews__title">Что о нас говорят</h2>
-						<div class="reviews__header-swap-arrows">
-					<button class="reviews__header-swap-arrow-button">
+						</div>
+						<div class="rewies__slider-wrapper">
+						<div class="reviews__header-swap-arrows ">
+					<button class="reviews__header-swap-arrow-button rewiews__slider-button rewiews__slider-button--prev">
 						<svg width="24" height="24">
 							<use
-								class="reviews__swap-arrow-left"
+								class="reviews__swap-arrow-left reviews__slider-button-icon"
 								href="./icons/sprite-arrows.svg#arrow-left">
 							</use>
 						</svg>
 					</button>
-					<button class="reviews__header-swap-arrow-button">
+					<button class="reviews__header-swap-arrow-button reviews__slider-button reviews__slider-button--next">
 						<svg width="24" height="24">
 							<use
-								class="reviews__swap-arrow-right"
+								class="reviews__swap-arrow-right reviews__slider-button-icon"
 								href="./icons/sprite-arrows.svg#arrow-right">
 							</use>
 						</svg>
 					</button>
 						</div>
-						</div>
-				<div class="reviews__list">
-					<article class="reviews__list-item">
+				<div class="reviews__list swiper reviews__slider">
+					<div class="swiper-wrapper reviews__list">
+							<article class="swiper-slide reviews__list-item">
+						<div class="reviews__slide-inner">
 						<div class="reviews__list-item-stars">
 						<svg class="reviews__list-item-stars-5">
 					<use	
@@ -460,8 +466,28 @@
 			<p class="reviews__list-item-comment text-comment">
 				«Я в восторге от качества и стиля одежды, которую получил от Shop.co. От повседневных вещей до элегантных платьев — каждая покупка превзошла мои ожидания.»
 			</p>
+			</div>
 					</article>
-					<article class="reviews__list-item review-2">
+					<article class="swiper-slide reviews__list-item">
+						<div class="reviews__slide-inner">
+						<div class="reviews__list-item-stars">
+						<svg class="reviews__list-item-stars-5">
+					<use	
+						href="./icons/sprite-stars.svg#5-stars">
+					</use>
+			</svg>	
+			</div>
+			<div class="reviews__list-item-name">
+				<p class="reviews__list-item-name-text">Виталий У.</p>
+			<img  class="reviews__list-item-name-check-mark" width="24" height="24" src="./icons/check-mark.svg" alt="белая галочка на зелёном фоне">
+			</div>
+			<p class="reviews__list-item-comment text-comment">
+				«Я в восторге от качества и стиля одежды, которую получил от Shop.co. От повседневных вещей до элегантных платьев — каждая покупка превзошла мои ожидания.»
+			</p>
+			</div>
+					</article>
+					<article class="swiper-slide reviews__list-item  review-2">
+						<div class="reviews__slide-inner">
 						<div class="reviews__list-item-stars">
 						<svg class="reviews__list-item-stars-5" >
 					<use
@@ -476,8 +502,10 @@
 			<p class="reviews__list-item-comment text-comment">
 			«Раньше было трудно найти одежду под мой стиль, пока я не открыл Shop.co. Их ассортимент впечатляет и подходит для разных вкусов и случаев.»
 			</p>
+			</div>
 					</article>
-					<article class="reviews__list-item review-3">
+					<article class="swiper-slide reviews__list-item review-3">
+						<div class="swiper__slide-inner">
 						<div class="reviews__list-item-stars">
 						<svg class="reviews__list-item-stars-5" >
 					<use
@@ -493,7 +521,30 @@
 			<p class="reviews__list-item-comment text-comment">
 			«Я всегда ищу уникальные модные вещи и был рад открыть для себя Shop.co. Их выбор одежды очень разнообразен и полностью соответствует последним модным трендам.»
 			</p>
+			</div>
 					</article>
+					<article class="swiper-slide reviews__list-item">
+						<div class="reviews__slide-inner">
+						<div class="reviews__list-item-stars">
+						<svg class="reviews__list-item-stars-5">
+					<use	
+						href="./icons/sprite-stars.svg#5-stars">
+					</use>
+			</svg>	
+			</div>
+			<div class="reviews__list-item-name">
+				<p class="reviews__list-item-name-text">Виталий У.</p>
+			<img  class="reviews__list-item-name-check-mark" width="24" height="24" src="./icons/check-mark.svg" alt="белая галочка на зелёном фоне">
+			</div>
+			<p class="reviews__list-item-comment text-comment">
+				«Я в восторге от качества и стиля одежды, которую получил от Shop.co. От повседневных вещей до элегантных платьев — каждая покупка превзошла мои ожидания.»
+			</p>
+			</div>
+					</article>
+					</div>
+					
+				</div>
+				</div>
 				</div>
 				</div>
 			</section>			

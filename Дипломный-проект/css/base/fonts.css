@@ -1,8 +1,8 @@
 @font-face {
-	font-family: satoshi;
+	font-family: Satoshi;
 	src:
-		local("satoshi regular"),
-		local("satoshi-regular"),
+		local("Satoshi regular"),
+		local("Satoshi-regular"),
 		url("../../fonts/satoshi-Regular.woff2") format("woff2");
 	font-weight: 400;
 	font-style: normal;
@@ -10,11 +10,11 @@
 }
 
 @font-face {
-	font-family: IntegraICF;
+	font-family: IntegralCF;
 	src:
-		local("IntegraICF Heavy"),
-		local("IntegraICF-Heavy"),
-		url("../../fonts/IntegraICF-Heavy.woff2") format("woff2");
+		local("IntegralCF Heavy"),
+		local("IntegralCF-Heavy"),
+		url("../../fonts/IntegralCF-Heavy.woff2") format("woff2");
 	font-weight: 900;
 	font-style: normal;
 	font-display: swap;

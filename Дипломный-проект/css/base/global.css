@@ -54,6 +54,7 @@ h2 {
 }
 
 .title-large {
+	font-family: var(--font-family-title);
 	font-weight: 900;
 	font-size: 57px;
 	line-height: 112%;

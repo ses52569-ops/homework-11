@@ -8,9 +8,9 @@
 	padding-bottom: 82px;
 }
 
-@media (width <= 992px) {
+@media (width <= 768px) {
 	.footer__container {
-		padding-top: 60px;
+		padding-top: 195px;
 	}
 }
 

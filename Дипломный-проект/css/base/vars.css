@@ -1,7 +1,7 @@
 :root {
 	/* font-family */
-	--font-family-text: "Satoshi", sans-serif;
-	--font-family-title: "IntegralCF Heavy", sans-serif;
+	--font-family-text: "Satoshi";
+	--font-family-title: "IntegralCF Heavy";
 
 	/* container */
 	--container-width: 1240px;

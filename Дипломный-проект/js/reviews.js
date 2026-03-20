@@ -1,17 +1,17 @@
-export const sizes = () => {
-	const sizesList = document.querySelector('[data-sizes="list"]');
-	const sizesButtons = document.querySelectorAll('[data-sizes="button"]');
+export const reviews = () => {
+	const reviewsList = document.querySelector('[data-reviews="list"]');
+	const reviewsButtons = document.querySelectorAll('[data-reviews="button"]');
 
-	const handleSizeClick = (event) => {
+	const handleReviewsClick = (event) => {
 		const target = event.target;
 
-		if (!target?.classList.contains("reviews__sizes-button")) return;
+		if (!target?.classList.contains("reviews__slider-button")) return;
 
-		sizesButtons.forEach((button) =>
-			button.classList.remove("reviews__sizes-button--active"),
+		reviewsButtons.forEach((button) =>
+			button.classList.remove("reviews__slider-button--active"),
 		);
-		target.classList.add("reviews__sizes-button--active");
+		target.classList.add("reviews__slider-button--active");
 	};
 
-	sizesList.addEventListener("click", handleSizeClick);
+	reviewsList.addEventListener("click", handleReviewsClick);
 };

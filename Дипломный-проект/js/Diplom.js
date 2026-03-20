@@ -1,7 +1,7 @@
 import HeaderFixed from "./header.js";
 import BurgerMenu from "./burger.js";
-import BurgerMenu from "./reviews.js";
-import { productSlider } from "./reviews-slider.js";
+import { reviews } from "./reviews.js";
+import { reviewsSlider } from "./reviews-slider.js";
 
 try {
 	const headerFixed = new HeaderFixed({
@@ -28,13 +28,8 @@ try {
 		headerFixed,
 	);
 
-	new Modal({
-		PAGE_BODY: "page__body",
-		PAGE_BODY_NO_SCROLL: "page__body--no-scroll",
-	});
-
-	productSlider();
-	sizes();
+	reviewsSlider();
+	reviews();
 } catch (error) {
 	console.error(error);
 }

@@ -1,13 +1,14 @@
 .hero {
 	background: #f2f0f1;
 	z-index: -1;
+	position: relative;
 }
 
 .hero__container {
 	display: flex;
 }
 
-@media (width <= 992px) {
+@media (width <= 1440px) {
 	.hero__container {
 		flex-direction: column;
 	}
@@ -33,7 +34,7 @@
 }
 */
 .hero__main-info {
-	z-index: 1;
+	z-index: 2;
 	display: flex;
 	flex-direction: column;
 	padding-top: 97px;
@@ -170,12 +171,67 @@
 }
 
 .hero__img {
+	width: 100%;
+	overflow: hidden;
 	position: absolute;
+	left: 0%;
 	z-index: 0;
 }
 
-.hero__black-star {
+@media (width <= 992px) {
+	.hero__img {
+		position: relative;
+	}
+}
+
+@media (width < 992px) {
+	.hero__img-picture-people {
+		display: none;
+	}
+}
+
+@media (width >= 992px) {
+	.hero__img-picture-people-small {
+		display: none;
+	}
+}
+
+@media (width < 992px) {
+	.hero__img-picture-people-small {
+		display: flex;
+	}
+}
+
+.hero__img-picture-star {
+	position: absolute;
+}
+
+.star-1 {
+	left: 50%;
+	top: 50%;
 	width: 56px;
 	height: 56px;
-	color: var(--main-color);
+}
+
+@media (width < 1440px) {
+	.star-1 {
+		top: 40%;
+		left: 1%;
+		width: 44px;
+		height: 44px;
+	}
+}
+
+.star-2 {
+	top: 10%;
+	right: 2%;
+	width: 104px;
+	height: 104px;
+}
+
+@media (width < 1440px) {
+	.star-2 {
+		width: 76px;
+		height: 76px;
+	}
 }

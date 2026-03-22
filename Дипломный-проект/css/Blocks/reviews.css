@@ -4,7 +4,7 @@
 
 @media (width <= 768px) {
 	.reviews__container {
-		margin-bottom: 136 px;
+		margin-bottom: 220px;
 	}
 }
 
@@ -52,9 +52,16 @@
 	min-width: 358px;
 }
 
+@media (width <= 526px) {
+	.reviews__list-item {
+		padding: 24px;
+	}
+}
+
 @media (width <= 768px) {
 	.reviews__title {
 		margin-bottom: 24px;
+		white-space: wrap;
 	}
 }
 

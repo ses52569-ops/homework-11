@@ -40,9 +40,15 @@
 @media (width <= 568px) {
 	.mailing__title {
 		text-align: start;
-		font-size: 30px;
+		font-size: 28px;
 		line-height: 117%;
 		min-height: 105px;
+	}
+}
+
+@media (width <= 440px) {
+	.mailing__title {
+		font-size: 26px;
 	}
 }
 

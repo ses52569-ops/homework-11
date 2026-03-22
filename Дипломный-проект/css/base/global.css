@@ -42,7 +42,7 @@ h2 {
 
 @media (width <= 526px) {
 	.title-comment {
-		font-size: 12px;
+		font-size: 10px;
 		line-height: 183%;
 	}
 }
@@ -53,31 +53,45 @@ h2 {
 	color: var(--main-color);
 }
 
+@media (width <= 768px) {
+	.text-comment {
+		font-size: 15px;
+		line-height: 157%;
+	}
+}
+
+@media (width <= 526px) {
+	.text-comment {
+		font-size: 14px;
+		line-height: 183%;
+	}
+}
+
 .title-large {
 	font-family: var(--font-family-title);
 	font-weight: 900;
-	font-size: 57px;
+	font-size: 50px;
 	line-height: 112%;
 	color: var(--main-color);
 }
 
 @media (width <= 992px) {
 	.title-large {
-		font-size: 50px;
+		font-size: 45px;
 		line-height: 110%;
 	}
 }
 
 @media (width <= 768px) {
 	.title-large {
-		font-size: 45px;
+		font-size: 40px;
 		line-height: 106%;
 	}
 }
 
 @media (width <= 480px) {
 	.title-large {
-		font-size: 32px;
+		font-size: 28px;
 		line-height: 106%;
 	}
 }

@@ -20,7 +20,7 @@
 
 @media (width <= 768px) {
 	.header__container {
-		gap: clamp(96px, -12.313rem + 75.13vw, 380px);
+		justify-content: space-between;
 	}
 }
 

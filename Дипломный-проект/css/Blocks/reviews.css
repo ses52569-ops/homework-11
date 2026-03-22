@@ -52,6 +52,12 @@
 	min-width: 358px;
 }
 
+@media (width <= 768px) {
+	.reviews__title {
+		margin-bottom: 24px;
+	}
+}
+
 @media (width > 526px) {
 	.reviews__list-item-stars-5 {
 		width: 139px;

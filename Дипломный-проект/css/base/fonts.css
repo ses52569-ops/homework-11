@@ -10,11 +10,11 @@
 }
 
 @font-face {
-	font-family: IntegralCF;
+	font-family: FONTSPRING DEMO-Integral CF;
 	src:
-		local("IntegralCF Heavy"),
-		local("IntegralCF-Heavy"),
-		url("../../fonts/IntegralCFHeavy.woff2") format("woff2");
+		local("FONTSPRING DEMO-Integral CF Heavy"),
+		local("FONTSPRING-DEMO-Integral-CF-Heavy"),
+		url("../../fonts/FSPDEMOIntegralCFHeavy.woff2") format("woff2");
 	font-weight: 900;
 	font-style: normal;
 	font-display: swap;

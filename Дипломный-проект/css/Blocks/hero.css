@@ -175,6 +175,7 @@
 	overflow: hidden;
 	position: absolute;
 	left: 0%;
+
 	z-index: 0;
 }
 
@@ -196,7 +197,7 @@
 	}
 }
 
-@media (width >= 526px) {
+@media (width > 526px) {
 	.hero__img-picture-people-small {
 		display: none;
 	}

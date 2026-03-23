@@ -40,7 +40,6 @@
 .brands-list-first-group,
 .brands-list-second-group {
 	display: flex;
-	justify-content: space-between;
 	text-align: center;
 	align-items: center;
 	gap: 106px;

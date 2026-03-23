@@ -1,0 +1,135 @@
+.Leaders-of-sales {
+	margin-bottom: 92px;
+}
+
+@media (width <= 768px) {
+	.Leaders-of-sales {
+		margin-bottom: 54px;
+	}
+}
+
+.Leaders-of-sales__title {
+	text-align: center;
+}
+
+.Leaders-of-sales__list {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding-bottom: 36px;
+}
+
+@media (width <= 992px) {
+	.leader-4 {
+		display: none;
+	}
+}
+
+@media (width <= 768px) {
+	.Leaders-of-sales__list {
+		gap: 10px;
+		justify-content: center;
+	}
+
+	.leader-3 {
+		display: none;
+	}
+}
+.Leaders-of-sales__list-item-img {
+	padding-bottom: 16px;
+}
+
+@media (width <= 526px) {
+	.Leaders-of-sales__list-item-img {
+		width: 174px;
+		height: 200px;
+		padding-bottom: 10px;
+	}
+}
+.Leaders-of-sales__list-item-info {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+@media (width <= 526px) {
+	.Leaders-of-sales__list-item-info {
+		gap: 5px;
+	}
+}
+
+.list-item-info__rating {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	gap: 13px;
+}
+
+@media (width > 526px) {
+	.list-item-info__rating-stars-5 {
+		width: 139px;
+		height: 23px;
+	}
+	.list-item-info__rating-stars-4 {
+		width: 90px;
+		height: 18px;
+	}
+}
+
+@media (width <= 526px) {
+	.list-item-info__rating-stars-5 {
+		width: 95px;
+		height: 15px;
+	}
+
+	.list-item-info__rating-stars-4 {
+		width: 75px;
+		height: 15px;
+	}
+}
+
+@media (width <= 768px) {
+	.list-item-info__rating {
+		gap: 10px;
+	}
+}
+
+.list-item-info__rating-numbers-5 {
+	color: var(--text-color);
+}
+
+.list-item-info__price-section {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	gap: 10px;
+}
+
+@media (width <= 768px) {
+	.list-item-info__price-section {
+		gap: 5px;
+	}
+}
+
+.Leaders-of-sales__get-more-button {
+	margin: auto;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	border: 1px solid var(--border-color);
+	border-radius: 62px;
+	padding: 16px 54px;
+	transition:
+		opacity var(--transition-time),
+		color var(--transition-time);
+}
+@media (any-hover: hover) {
+	.Leaders-of-sales__get-more-button:hover {
+		opacity: 0.5;
+	}
+
+	.Leaders-of-sales__get-more-button:active {
+		opacity: var(--main-color);
+	}
+}

@@ -1,0 +1,21 @@
+@font-face {
+	font-family: Satoshi;
+	src:
+		local("Satoshi Regular"),
+		local("Satoshi-Regular"),
+		url("../../fonts/SatoshiRegular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: FONTSPRING DEMO-Integral CF;
+	src:
+		local("FONTSPRING DEMO-Integral CF Heavy"),
+		local("FONTSPRING-DEMO-Integral-CF-Heavy"),
+		url("../../fonts/FSPDEMOIntegralCFHeavy.woff2") format("woff2");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}

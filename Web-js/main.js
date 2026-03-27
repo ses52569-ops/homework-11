@@ -9,11 +9,11 @@ console.log(
 	`Меня зовут ${firstName} ${surName}, мне ${age} лет. Я студент: ${isStudent}.`,
 );
 
-let a = 123;
+let a = "123";
 let b = +456;
 let c = Number(789);
 let d = Boolean(0);
 let e = Boolean(" ");
-let result = a + b + c + d + e;
+let result = Number(a) + b + c + d + e;
 
 console.log(result);

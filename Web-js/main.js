@@ -1,19 +1,40 @@
-let firstName = "Джусси";
-let surName = "Пукман";
-let isStudent = true;
+//letfirstName = "Джусси";
+//letsurName = "Пукман";
+//letisStudent = true;
 
-let age = 19;
-let resentYear = 2026;
-let birthday = resentYear - age;
-console.log(
+//letage = 19;
+//letresentYear = 2026;
+//letbirthday = resentYear - age;
+//console
+//.log(
 	`Меня зовут ${firstName} ${surName}, мне ${age} лет. Я студент: ${isStudent}.`,
-);
+//);
 
-let a = "123";
-let b = +456;
-let c = Number(789);
-let d = Boolean(0);
-let e = Boolean(" ");
-let result = Number(a) + b + c + d + e;
+//leta = "123";
+//letb = +456;
+//letc = Number(789);
+//letd = Boolean(0);
+//lete = Boolean(" ");
+//letresult = Number(a) + b + c + d + e;
 
-console.log(result);
+//console
+//.log(result);
+
+//if (firstName === "Джусси" && surName === "Пукман") {
+	//console
+//.log("Это студент");
+//} else {
+//	firstName = "!Джусси";
+//	surName = "!Пукман";
+	//console
+//.log("Это не студент");
+//}
+
+//const studentsName = prompt("Введите имя", "Иван");
+//const studentsSurname = prompt("Введите фамилию", "Иванов");
+//const list =
+//	studentsName == "Джусси" && studentsSurname == "Пукман"
+//		? "Это студент"
+//		: "Это не студент";
+//console
+//.log(list);

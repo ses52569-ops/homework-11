@@ -98,3 +98,31 @@ if (
 } else {
 	alert("Неверные данные");
 }
+
+for (let number = 1; number <= 20; number++) {
+	if (number % 4 === 0) {
+		continue;
+	}
+	console.log(number);
+}
+
+const number = prompt("Введите число для вычисления факториала:");
+
+if (isNaN(number) || number < 0) {
+	console.log("Пожалуйста, введите допустимое неотрицательное число.");
+} else {
+	let factorial = 1;
+	for (let i = 1; i <= number; i++) {
+		factorial = factorial * i;
+	}
+	console.log(`Факториал числа ${number} равен ${factorial}`);
+}
+
+let board = 8;
+
+for (let row = "#"; row < boardSize; row++) {
+	for (let col = "#"; col < boardSize; col++) {
+		board = row;
+	}
+	console.log(board);
+}

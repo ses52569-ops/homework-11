@@ -1,25 +1,50 @@
-// Задача 1.
-// Напишите функцию calculateFinalPrice, которая принимает базовую цену товара, процент скидки и налоговую ставку. Функция должна вычислять скидку, затем прибавлять налог и возвращать итоговую цену.
+const users = [
+	{ name: "Alex", age: 24, isAdmin: false },
+	{ name: "Bob", age: 13, isAdmin: false },
+	{ name: "John", age: 31, isAdmin: true },
+	{ name: "Jane", age: 20, isAdmin: false },
+];
 
-// Пример работы:
-// console.log(calculateFinalPrice(100, 10, 0.2)); // 108
-// console.log(calculateFinalPrice(100, 10, 0)); // 90
+users.push(
+	{ name: "Ann", age: 19, isAdmin: false },
+	{ name: "Jack", age: 43, isAdmin: true },
+);
 
-// Задача 2.
-// Напишите функцию checkAccess, которая принимает имя пользователя и пароль. Если имя пользователя равно "admin" и пароль равен "123456", функция должна возвращать строку "Доступ разрешен", иначе — "Доступ запрещен".
+console.log(users);
 
-// Задача 3.
-// Напишите функцию getTimeOfDay, которая принимает текущее время (число от 0 до 23) и возвращает строку:
-// "Ночь" (с 0 до 5 часов),
-// "Утро" (с 6 до 11 часов),
-// "День" (с 12 до 17 часов),
-// "Вечер" (с 18 до 23 часов).
-// Если введённое значение не попадает в этот диапазон, возвращайте `"Некорректное время"`.
+function getUserAverageAge(users) {
+	let sumAge = 0;
 
-// Задача 4.
-// Напишите функцию findFirstEven, которая принимает два числа start и end и находит первое чётное число в указанном диапазоне.
-// Если чётного числа в этом диапазоне нет, функция должна вернуть "Чётных чисел нет".
+	users.forEach((user) => {
+		sumAge += user.age;
+	});
 
-// Пример работы:
-// console.log(findFirstEven(1, 10)); // 2
-// console.log(findFirstEven(9, 9)); // "Чётных чисел нет"
+	return sumAge / users.length;
+}
+console.log(getUserAverageAge(users));
+
+function getAllAdmins(users) {
+	const admins = [];
+	users.forEach((user) => {
+		if (user.isAdmin === true) {
+			admins.push(user);
+		}
+	});
+	return admins;
+}
+console.log(getAllAdmins(users));
+
+function first(arr, n = 1) {
+	const arrLength = arr.length;
+	if (arrLength < n) {
+		console.error("${n} не может быть меньше длины массива: ${arrLenght}");
+		return;
+	}
+	const newArr = new Array(n);
+	for (let i = 0; i < n; i++) {
+		newArr[i] = arr[i];
+	}
+	return newArr;
+}
+
+console.log(first([10, 15, 33, 14]));

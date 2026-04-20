@@ -12,6 +12,12 @@ users.push(
 
 console.log(users);
 
+const adults = users.filter((user) => {
+	return user.age > 30;
+});
+
+console.log("Пользователи старше 30:", adults);
+
 function getUserAverageAge(users) {
 	let sumAge = 0;
 

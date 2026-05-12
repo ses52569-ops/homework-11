@@ -6,7 +6,15 @@ const todoKeys = {
 	is_completed: "is_completed",
 };
 
-const todos = [];
+const getTodosFromLocalStorage = () => {
+	return JSON.parse(localStorage.getItem("todos"));
+};
+
+const setTodosLocalStorage = (todos) => {
+	localStorage.setItem("todos", JSON.stringify(todos));
+};
+
+const todos = getTodosFromLocalStorage() || [];
 
 const errTodoNotFound = (todoId) => `Todo with id ${todoId} not found`;
 
@@ -62,11 +70,27 @@ const createTodoElement = (todo) => {
 	return todoElement;
 };
 
+const renderTodos = (todos, container) => {
+	container.innerHTML = "";
+	todos.forEach((todo) => {
+		const todoElement = createTodoElement(todo);
+		if (todo[todoKeys.is_completed]) {
+			todoElement.classList.add("completed");
+		}
+		container.prepend(todoElement);
+	});
+};
+
 const handleCreateTodo = (todos, text) => {
 	const todo = createTodo(todos, text);
 	const todoElement = createTodoElement(todo);
+	setTodosLocalStorage(todos);
 	todosElement.prepend(todoElement);
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+	renderTodos(todos, todosElement);
+});
 
 formElement.addEventListener("submit", (event) => {
 	event.preventDefault();
@@ -86,11 +110,13 @@ todosElement.addEventListener("click", (event) => {
 
 	if (event.target.matches(".button-complete")) {
 		completeTodoById(todos, todoId);
+		setTodosLocalStorage(todos);
 		todo.classList.toggle("completed");
 	}
 
 	if (event.target.matches(".button-delete")) {
 		deleteTodoById(todos, todoId);
+		setTodosLocalStorage(todos);
 		todo.remove();
 	}
 });

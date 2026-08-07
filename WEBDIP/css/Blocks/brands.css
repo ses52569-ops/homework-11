@@ -1,0 +1,89 @@
+.brands {
+	z-index: var(--layer-1);
+	background: var(--main-color);
+}
+
+.brands-list {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 98px;
+	padding-top: 44px;
+	padding-bottom: 44px;
+	margin-bottom: 72px;
+}
+
+@media (width <= 1280px) {
+	.brands-list {
+		gap: 56px;
+	}
+}
+
+@media (width <= 992px) {
+	.brands-list {
+		gap: 22px;
+	}
+}
+
+@media (width <= 768px) {
+	.brands-list {
+		justify-content: space-between;
+		gap: 22px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		margin-bottom: 52px;
+	}
+}
+
+@media (width <= 526px) {
+	.brands-list {
+		justify-content: center;
+	}
+}
+
+@media (width > 526px) {
+	.brands-icon-link--versace {
+		width: 166px;
+		height: 33px;
+	}
+	.brands-icon-link--zara {
+		width: 91px;
+		height: 38px;
+	}
+	.brands-icon-link--gucci {
+		width: 156px;
+		height: 36px;
+	}
+	.brands-icon-link--prada {
+		width: 194px;
+		height: 32px;
+	}
+	.brands-icon-link--calvin-klein {
+		width: 207px;
+		height: 34px;
+	}
+}
+
+@media (width <= 526px) {
+	#versace {
+		width: 117px;
+		height: 23px;
+	}
+	#zara {
+		width: 64px;
+		height: 27px;
+	}
+	#gucci {
+		width: 109px;
+		height: 25px;
+	}
+	#prada {
+		width: 127px;
+		height: 21px;
+	}
+	#calvin-klein {
+		width: 135px;
+		height: 22px;
+	}
+}

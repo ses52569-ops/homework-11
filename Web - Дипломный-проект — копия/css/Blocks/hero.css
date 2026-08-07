@@ -1,0 +1,283 @@
+.hero {
+	background: #f2f0f1;
+	z-index: var(--layer-0);
+	position: relative;
+}
+
+.red {
+	background: red;
+}
+
+.hero__container {
+	display: flex;
+}
+
+@media (width <= 1400px) {
+	.hero__container {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+/*.hero__wrapper::before {
+	content: "";
+	position: absolute;
+
+	z-index: var(--layer--1);
+	background-image: url(../../Images/fashion-menschen.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.hero__wrapper {
+	width: 1440px;
+	position: relative;
+	z-index: var(--layer-0);
+	display: flex;
+}
+*/
+.hero__main-info {
+	display: flex;
+	flex-direction: column;
+	padding-top: 97px;
+	margin-bottom: 116px;
+	z-index: var(--layer-1);
+}
+
+@media (width <= 992px) {
+	.hero__main-info {
+		padding-top: 55px;
+		margin-bottom: 0px;
+	}
+}
+
+@media (width <= 768px) {
+	.hero__main-info {
+		padding-top: 40px;
+	}
+}
+
+.hero__title {
+	max-width: 577px;
+	max-height: 168px;
+	margin-bottom: 34px;
+}
+
+@media (width <= 1400px) {
+	.hero__title {
+		max-width: 800px;
+	}
+}
+
+@media (width <= 768px) {
+	.hero__title {
+		max-width: 500px;
+	}
+}
+
+@media (width <= 480px) {
+	.hero__title {
+		margin-bottom: 20px;
+		max-width: 322px;
+	}
+}
+
+.hero__main-info-text {
+	color: var(--text-color);
+	margin-bottom: 32px;
+	max-width: 551px;
+}
+
+@media (width <= 526px) {
+	.hero__main-info-text {
+		max-width: 358px;
+	}
+}
+
+.hero__main-info-button {
+	display: flex;
+	text-align: center;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 62px;
+	padding: 16px 54px;
+	margin-right: auto;
+	background: var(--main-color);
+	color: white;
+	margin-bottom: 48px;
+	cursor: pointer;
+	z-index: var(--layer-3);
+}
+
+@media (any-hover: hover) {
+	.hero__main-info-button:hover {
+		opacity: 0.5;
+		transition: opacity 0.2s;
+	}
+
+	.hero__main-info-button:active {
+		opacity: var(--main-color);
+	}
+}
+
+@media (width <= 768px) {
+	.hero__main-info-button {
+		width: 100%;
+		justify-content: center;
+	}
+}
+
+.hero__main-info-achievements {
+	display: flex;
+}
+
+.hero__main-info-achievements-first-row,
+.hero__main-info-achievements-second-row {
+	display: flex;
+	align-items: center;
+}
+
+@media (width <= 768px) {
+	.hero__main-info-achievements {
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		gap: 12px;
+	}
+}
+
+.hero__achievement {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	white-space: nowrap;
+}
+
+.hero__achievements-number {
+	font-weight: 700;
+	font-size: 40px;
+	color: var(--main-color);
+}
+
+@media (width <= 526px) {
+	.hero__achievements-number {
+		font-size: 24px;
+	}
+}
+
+.achieve-border,
+.achieve-border--third {
+	padding-left: 32px;
+	margin-left: 32px;
+	border-left: 1px solid var(--border-color);
+}
+
+@media (width <= 768px) {
+	.achieve-border {
+		margin-left: 50px;
+		padding-left: 50px;
+	}
+
+	.achieve-border--third {
+		border: none;
+		margin-left: 0;
+		padding-left: 0;
+	}
+}
+
+@media (width <= 526px) {
+	.achieve-border {
+		margin-left: 28px;
+		padding-left: 28px;
+	}
+}
+
+.hero__img {
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	left: 0%;
+	max-width: none;
+
+	z-index: 0;
+}
+
+@media (width <= 1400px) {
+	.hero__img {
+		position: relative;
+	}
+}
+
+@media (width < 1400px) {
+	.hero__img-picture-people {
+		display: flex;
+		padding: 0;
+		margin: 0;
+		transform: translateX(-25%);
+	}
+}
+
+@media (width < 526px) {
+	.hero__img-picture-people {
+		display: none;
+	}
+}
+
+@media (width > 526px) {
+	.hero__img-picture-people-small {
+		display: none;
+	}
+}
+
+@media (width < 526px) {
+	.hero__img-picture-people-small {
+		display: flex;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.hero__img-picture-star {
+	position: absolute;
+}
+
+.star-1 {
+	left: 50%;
+	top: 50%;
+	width: 56px;
+	height: 56px;
+}
+
+@media (width < 1400px) {
+	.star-1 {
+		top: 40%;
+		left: 1%;
+		width: 88px;
+		height: 88px;
+	}
+}
+
+@media (width < 992px) {
+	.star-1 {
+		top: 40%;
+		left: 1%;
+		width: 44px;
+		height: 44px;
+	}
+}
+
+.star-2 {
+	top: 10%;
+	right: 2%;
+	width: 104px;
+	height: 104px;
+}
+
+@media (width < 1400px) {
+	.star-2 {
+		width: 76px;
+		height: 76px;
+	}
+}
